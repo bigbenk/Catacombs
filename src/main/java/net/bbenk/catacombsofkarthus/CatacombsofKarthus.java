@@ -1,6 +1,10 @@
 package net.bbenk.catacombsofkarthus;
 
 import com.mojang.logging.LogUtils;
+import net.bbenk.catacombsofkarthus.block.ModBlocks;
+import net.bbenk.catacombsofkarthus.item.ModCreativeModeTabs;
+import net.bbenk.catacombsofkarthus.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -16,23 +20,25 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(CatacombsofKarthustest.MODID)
-public class CatacombsofKarthustest {
-    // Define mod id in a common place for everything to reference
+@Mod(CatacombsofKarthus.MODID)
+public class CatacombsofKarthus {
     public static final String MODID = "catacombsofkarthus";
-    // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
-    public CatacombsofKarthustest() {
+    public CatacombsofKarthus() { //main class!!!
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        modEventBus.addListener(this::commonSetup);
+        ModCreativeModeTabs.register(modEventBus);
 
+
+        ModItems.register(modEventBus); //registers from ModItems.java calling with variable modEventBus
+        ModBlocks.register(modEventBus); //registers from ModBlocks.java calling with variable modEventBus
+
+
+        modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
-
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
-
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -41,10 +47,22 @@ public class CatacombsofKarthustest {
 
     }
 
-    // Add the example block item to the building blocks tab
+    // Add the example block item to vanilla creative mode tabs
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
-    }
+        //if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            //add to tab ingredients
+            //event.accept(ModItems.SOULPOWDER);
+            //event.accept(ModItems.SOULGEODE);
+            //event.accept(ModItems.SSOULCRYSTAL);
+            //.accept(ModItems.MSOULCRYSTAL);
+            //event.accept(ModItems.LSOULCRYSTAL);
+            //add to tab ingredients
+        }
+        //if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            //event.accept(ModBlocks.SOULCRYSTAL_BLOCK);
+            //event.accept(ModBlocks.SOULFLUX_ORE);
+        //}
+    //}
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent

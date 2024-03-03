@@ -1,0 +1,16 @@
+{
+  "item.catacombsofkarthus.soulpowder": "Soul Powder",
+  "item.catacombsofkarthus.soulgeode": "Soul Geode",
+  "item.catacombsofkarthus.ssoulcrystal": "Soul Crystal",
+  "item.catacombsofkarthus.msoulcrystal": "Soul Crystal2",
+  "item.catacombsofkarthus.lsoulcrystal": "Soul Crystal3",
+  "item.catacombsofkarthus.rawopal": "Unprocessed Opal",
+
+  "item.catacombsofkarthus.mallet": "Iron Mallet",
+
+  "block.catacombsofkarthus.soulcrystal_block": "Block of Soul Crystals",
+  "block.catacombsofkarthus.opal_ore": "Opal Ore",
+  "block.catacombsofkarthus.deepslate_opal_ore": "Deepslate Opal Ore",
+
+  "creativetab.allitems_tab": "CoK Items"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "tools",
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "catacombsofkarthus:ssoulcrystal"
+    }
+  },
+    "result": {
+      "item": "catacombsofkarthus:soulcrystal_block"
+    }
+}

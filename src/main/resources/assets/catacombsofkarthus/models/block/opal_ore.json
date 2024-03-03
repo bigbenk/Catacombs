@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "catacombsofkarthus:block/opal_ore"
+  }
+}

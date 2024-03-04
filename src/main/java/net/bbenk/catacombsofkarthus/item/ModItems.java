@@ -27,8 +27,9 @@ public class ModItems {
     public static final RegistryObject<Item> RAWOPAL = ITEMS.register("rawopal",
             () -> new Item(new Item.Properties().stacksTo(64)));
     public static final RegistryObject<Item> MALLET = ITEMS.register("mallet",
-            () -> new Item(new Item.Properties().setNoRepair().durability(10)));
-
+            () -> new Item(new Item.Properties().durability(10)));
+    public static final RegistryObject<Item> MOLDY_BOTTLE = ITEMS.register("moldy_bottle",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.MOLDY_BOTTLE)));
         //REGISTER ITEMS HERE
 
 

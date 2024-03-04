@@ -23,7 +23,7 @@ import org.slf4j.Logger;
 @Mod(CatacombsofKarthus.MODID)
 public class CatacombsofKarthus {
     public static final String MODID = "catacombsofkarthus";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
     public CatacombsofKarthus() { //main class!!!
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
@@ -32,8 +32,6 @@ public class CatacombsofKarthus {
 
         ModItems.register(modEventBus); //registers from ModItems.java calling with variable modEventBus
         ModBlocks.register(modEventBus); //registers from ModBlocks.java calling with variable modEventBus
-
-
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -63,20 +61,5 @@ public class CatacombsofKarthus {
             //event.accept(ModBlocks.SOULFLUX_ORE);
         //}
     //}
-
-    // You can use SubscribeEvent and let the Event Bus discover methods to call
-    @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {
-        // Do something when the server starts
-        LOGGER.info("HELLO from server starting");
-    }
-
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
-
-        }
-    }
 }
+

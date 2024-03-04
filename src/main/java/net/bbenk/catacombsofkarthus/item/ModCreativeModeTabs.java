@@ -18,16 +18,18 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SOULGEODE.get()))
                     .title(Component.translatable("creativetab.allitems_tab")).displayItems((displayParameters, output) -> {
                         //Add items to tab here!!!
-
+            //Ingredients
                         output.accept(ModItems.SOULGEODE.get());
                         output.accept(ModItems.SOULPOWDER.get());
                         output.accept(ModItems.SSOULCRYSTAL.get());
                         output.accept(ModItems.MSOULCRYSTAL.get());
                         output.accept(ModItems.LSOULCRYSTAL.get());
                         output.accept(ModItems.RAWOPAL.get());
-
+            //Tools&Misc
                         output.accept(ModItems.MALLET.get());
-
+            //Foods
+                        output.accept(ModItems.MOLDY_BOTTLE.get());
+            //Blocks
                         output.accept(ModBlocks.SOULCRYSTAL_BLOCK.get());
                         output.accept(ModBlocks.OPAL_ORE.get());
                         output.accept(ModBlocks.DEEPSLATE_OPAL_ORE.get());

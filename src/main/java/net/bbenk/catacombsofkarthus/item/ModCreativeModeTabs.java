@@ -21,18 +21,35 @@ public class ModCreativeModeTabs {
             //Ingredients
                         output.accept(ModItems.SOULGEODE.get());
                         output.accept(ModItems.SOULPOWDER.get());
-                        output.accept(ModItems.SSOULCRYSTAL.get());
-                        output.accept(ModItems.MSOULCRYSTAL.get());
-                        output.accept(ModItems.LSOULCRYSTAL.get());
-                        output.accept(ModItems.RAWOPAL.get());
+                        output.accept(ModItems.SOULSTONE.get());
+                        output.accept(ModItems.OPAL.get());
+                        output.accept(ModItems.JADE.get());
+                        output.accept(ModItems.SAPPHIRE.get());
+                        output.accept(ModItems.PAINITE.get());
+
             //Tools&Misc
                         output.accept(ModItems.MALLET.get());
+
+                        output.accept(ModItems.GEM_AXE.get());
+                        output.accept(ModItems.GEM_HOE.get());
+                        output.accept(ModItems.GEM_SHOVEL.get());
+                        output.accept(ModItems.GEM_PICK.get());
+
+                        output.accept(ModItems.SHADOW_SWORD.get());
+
             //Foods
                         output.accept(ModItems.MOLDY_BOTTLE.get());
             //Blocks
-                        output.accept(ModBlocks.SOULCRYSTAL_BLOCK.get());
+                        output.accept(ModBlocks.SOULSTONE_BLOCK.get());
                         output.accept(ModBlocks.OPAL_ORE.get());
                         output.accept(ModBlocks.DEEPSLATE_OPAL_ORE.get());
+                        output.accept(ModBlocks.JADE_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_JADE_ORE.get());
+                        output.accept(ModBlocks.SAPPHIRE_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
+                        output.accept(ModBlocks.PAINITE_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_PAINITE_ORE.get());
+
                         //Add items to tab here!!!
     }).build());
     //Register creative mode tabs!!!

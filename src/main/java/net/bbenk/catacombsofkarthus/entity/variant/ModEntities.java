@@ -1,7 +1,7 @@
 package net.bbenk.catacombsofkarthus.entity.variant;
 
 import net.bbenk.catacombsofkarthus.CatacombsofKarthus;
-import net.bbenk.catacombsofkarthus.entity.PlayerLambEntity;
+import net.bbenk.catacombsofkarthus.entity.PlayerLambArrowEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -13,9 +13,9 @@ public class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
             DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, CatacombsofKarthus.MODID);
 
-    public static final RegistryObject<EntityType<PlayerLambEntity>> PLAYER_LAMB_ARROW =
+    public static final RegistryObject<EntityType<PlayerLambArrowEntity>> PLAYER_LAMB_ARROW =
             ENTITY_TYPES.register("player_lamb_arrow",
-                    () -> EntityType.Builder.<PlayerLambEntity>of(PlayerLambEntity::new, MobCategory.MISC)
+                    () -> EntityType.Builder.<PlayerLambArrowEntity>of(PlayerLambArrowEntity::new, MobCategory.MISC)
                             .sized(0.5f, 0.5f)
                             .clientTrackingRange(4)
                             .updateInterval(20)

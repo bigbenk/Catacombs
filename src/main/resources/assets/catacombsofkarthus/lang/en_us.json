@@ -1,16 +1,32 @@
 {
   "item.catacombsofkarthus.soulpowder": "Soul Powder",
   "item.catacombsofkarthus.soulgeode": "Soul Geode",
-  "item.catacombsofkarthus.ssoulcrystal": "Soul Crystal",
-  "item.catacombsofkarthus.msoulcrystal": "Soul Crystal2",
-  "item.catacombsofkarthus.lsoulcrystal": "Soul Crystal3",
-  "item.catacombsofkarthus.rawopal": "Unprocessed Opal",
+  "item.catacombsofkarthus.soulstone": "Soul Stone",
+  "item.catacombsofkarthus.opal": "Uncut Opal",
+  "item.catacombsofkarthus.jade": "Uncut Jade",
+  "item.catacombsofkarthus.sapphire": "Uncut Sapphire",
+  "item.catacombsofkarthus.painite": "Uncut Painite",
+
+  "tooltip.catacombsofkarthus.gem_axe.tooltip.shift": "Press §u§dSHIFT§r for more Information",
 
   "item.catacombsofkarthus.mallet": "Iron Mallet",
 
-  "block.catacombsofkarthus.soulcrystal_block": "Block of Soul Crystals",
+  "item.catacombsofkarthus.gem_pick": "Precision Pick",
+  "item.catacombsofkarthus.gem_axe": "Stripping Axe",
+  "item.catacombsofkarthus.gem_hoe": "Heirloom Scythe",
+  "item.catacombsofkarthus.gem_shovel": "Excavation Shovel",
+  "item.catacombsofkarthus.shadow_gs": "Shadow Sword",
+
+
+  "block.catacombsofkarthus.soulstone_block": "Block of Soul Stones",
   "block.catacombsofkarthus.opal_ore": "Opal Ore",
   "block.catacombsofkarthus.deepslate_opal_ore": "Deepslate Opal Ore",
+  "block.catacombsofkarthus.jade_ore": "Jade Ore",
+  "block.catacombsofkarthus.deepslate_jade_ore": "Deepslate Jade Ore",
+  "block.catacombsofkarthus.sapphire_ore": "Sapphire Ore",
+  "block.catacombsofkarthus.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+  "block.catacombsofkarthus.painite_ore": "Painite Ore",
+  "block.catacombsofkarthus.deepslate_painite_ore": "Deepslate Painite Ore",
 
   "creativetab.allitems_tab": "CoK Items"
 }

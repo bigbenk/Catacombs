@@ -23,14 +23,38 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, CatacombsofKarthus.MODID);
 
     //REGISTER BLOCKS HERE!!!
-    public static final RegistryObject<Block> SOULCRYSTAL_BLOCK = registerBlock("soulcrystal_block",
-            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(4.5F, 6.0F).sound(SoundType.METAL)));
+    public static final RegistryObject<Block> SOULSTONE_BLOCK = registerBlock("soulstone_block",
+            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.RAW_IRON).instrument(NoteBlockInstrument.CHIME)
+                    .requiresCorrectToolForDrops().strength(4.5F, 6.0F).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> OPAL_ORE = registerBlock("opal_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .requiresCorrectToolForDrops().strength(2.2F, 6.0F).sound(SoundType.STONE),
             UniformInt.of(3,7)));
     public static final RegistryObject<Block> DEEPSLATE_OPAL_ORE = registerBlock("deepslate_opal_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .requiresCorrectToolForDrops().strength(2.5F, 6.0F).sound(SoundType.DEEPSLATE),
+                    UniformInt.of(5, 9)));
+    public static final RegistryObject<Block> JADE_ORE = registerBlock("jade_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .requiresCorrectToolForDrops().strength(2.5F, 6.0F).sound(SoundType.STONE),
+                    UniformInt.of(5, 9)));
+    public static final RegistryObject<Block> DEEPSLATE_JADE_ORE = registerBlock("deepslate_jade_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .requiresCorrectToolForDrops().strength(3.1F, 6.0F).sound(SoundType.DEEPSLATE),
+                    UniformInt.of(5, 9)));
+    public static final RegistryObject<Block> SAPPHIRE_ORE = registerBlock("sapphire_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .requiresCorrectToolForDrops().strength(2.5F, 6.0F).sound(SoundType.STONE),
+                    UniformInt.of(5, 9)));
+    public static final RegistryObject<Block> DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .requiresCorrectToolForDrops().strength(2.5F, 6.0F).sound(SoundType.DEEPSLATE),
+                    UniformInt.of(5, 9)));
+    public static final RegistryObject<Block> PAINITE_ORE = registerBlock("painite_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .requiresCorrectToolForDrops().strength(2.5F, 6.0F).sound(SoundType.STONE),
+                    UniformInt.of(5, 9)));
+    public static final RegistryObject<Block> DEEPSLATE_PAINITE_ORE = registerBlock("deepslate_painite_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .requiresCorrectToolForDrops().strength(2.5F, 6.0F).sound(SoundType.DEEPSLATE),
                     UniformInt.of(5, 9)));

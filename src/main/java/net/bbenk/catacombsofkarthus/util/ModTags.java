@@ -21,12 +21,18 @@ public class ModTags {
         }
     }
     public static class Blocks {
-        public static final TagKey<Block> METALDETECTOR = tag("the");
+        //public static final TagKey<Block> METALDETECTOR = tag("the");
+
+        //register block related ags here
+        public static final TagKey<Block> NEEDS_SHADOW_TOOL = tag("needs_shadow_tool");
+        public static final TagKey<Block> NEEDS_GEMPICK_TOOL = tag("needs_gempick_tool");
+        //register block related tags here
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(CatacombsofKarthus.MODID, name));
 
         }
+
         private static TagKey<Block> forgetag(String name) {
             return BlockTags.create(new ResourceLocation("forge", name));
 

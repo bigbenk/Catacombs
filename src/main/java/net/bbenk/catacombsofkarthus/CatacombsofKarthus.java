@@ -4,11 +4,9 @@ import com.mojang.logging.LogUtils;
 import net.bbenk.catacombsofkarthus.block.ModBlocks;
 import net.bbenk.catacombsofkarthus.item.ModCreativeModeTabs;
 import net.bbenk.catacombsofkarthus.item.ModItems;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -25,14 +23,17 @@ public class CatacombsofKarthus {
     public static final String MODID = "catacombsofkarthus";
     public static final Logger LOGGER = LogUtils.getLogger();
     public CatacombsofKarthus() { //main class!!!
+    //event bus register
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeModeTabs.register(modEventBus);
 
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
-        ModItems.register(modEventBus); //registers from ModItems.java calling with variable modEventBus
-        ModBlocks.register(modEventBus); //registers from ModBlocks.java calling with variable modEventBus
         modEventBus.addListener(this::commonSetup);
+    //event bus register
+
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
         // Register the item to a creative tab
@@ -61,5 +62,15 @@ public class CatacombsofKarthus {
             //event.accept(ModBlocks.SOULFLUX_ORE);
         //}
     //}
+
+    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    public static class ClientModEvents {
+        @SubscribeEvent
+        public static void onClientStartup(FMLClientSetupEvent event) {
+            event.enqueueWork(() -> {
+            });
+        }
+    }
+
 }
 

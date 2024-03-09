@@ -2,6 +2,7 @@ package net.bbenk.catacombsofkarthus.item;
 
 import net.bbenk.catacombsofkarthus.CatacombsofKarthus;
 import net.bbenk.catacombsofkarthus.block.ModBlocks;
+import net.bbenk.catacombsofkarthus.enchantment.ModEnchantments;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -26,17 +27,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.JADE.get());
                         output.accept(ModItems.SAPPHIRE.get());
                         output.accept(ModItems.PAINITE.get());
-
+                        output.accept(ModItems.WITHERSPEC.get());
             //Tools&Misc
                         output.accept(ModItems.MALLET.get());
-
-                        output.accept(ModItems.GEM_AXE.get());
-                        output.accept(ModItems.GEM_HOE.get());
-                        output.accept(ModItems.GEM_SHOVEL.get());
                         output.accept(ModItems.GEM_PICK.get());
+                        output.accept(ModItems.SPIRIT_BOW.get());
 
                         output.accept(ModItems.SHADOW_SWORD.get());
-
+            //Armor
+                        output.accept(ModItems.AVIATOR_HELMET.get());
             //Foods
                         output.accept(ModItems.MOLDY_BOTTLE.get());
             //Blocks

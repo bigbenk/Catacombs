@@ -2,10 +2,14 @@ package net.bbenk.catacombsofkarthus;
 
 import com.mojang.logging.LogUtils;
 import net.bbenk.catacombsofkarthus.block.ModBlocks;
+import net.bbenk.catacombsofkarthus.enchantment.ModEnchantments;
+import net.bbenk.catacombsofkarthus.entity.ModEntities;
 import net.bbenk.catacombsofkarthus.item.ModCreativeModeTabs;
+import net.bbenk.catacombsofkarthus.item.ModItemProperties;
 import net.bbenk.catacombsofkarthus.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -30,6 +34,8 @@ public class CatacombsofKarthus {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEnchantments.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
     //event bus register
@@ -68,9 +74,9 @@ public class CatacombsofKarthus {
         @SubscribeEvent
         public static void onClientStartup(FMLClientSetupEvent event) {
             event.enqueueWork(() -> {
+                ModItemProperties.addCustomItemProperties();
             });
         }
     }
-
 }
 

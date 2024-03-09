@@ -6,16 +6,18 @@
   "item.catacombsofkarthus.jade": "Uncut Jade",
   "item.catacombsofkarthus.sapphire": "Uncut Sapphire",
   "item.catacombsofkarthus.painite": "Uncut Painite",
+  "item.catacombsofkarthus.witherspec": "Witherspec Alloy",
 
   "tooltip.catacombsofkarthus.gem_axe.tooltip.shift": "Press §u§dSHIFT§r for more Information",
 
   "item.catacombsofkarthus.mallet": "Iron Mallet",
 
-  "item.catacombsofkarthus.gem_pick": "Precision Pick",
-  "item.catacombsofkarthus.gem_axe": "Stripping Axe",
-  "item.catacombsofkarthus.gem_hoe": "Heirloom Scythe",
-  "item.catacombsofkarthus.gem_shovel": "Excavation Shovel",
+  "item.catacombsofkarthus.gem_pick": "Bejeweled Pickaxe",
+  "item.catacombsofkarthus.aviator_helmet": "Aviator Cap",
   "item.catacombsofkarthus.shadow_gs": "Shadow Sword",
+  "item.catacombsofkarthus.spirit_bow": "Blossom Bow",
+
+  "enchantment.catacombsofkarthus.lightning_smite_enchant": "Thundercaller",
 
 
   "block.catacombsofkarthus.soulstone_block": "Block of Soul Stones",

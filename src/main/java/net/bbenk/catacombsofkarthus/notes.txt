@@ -1,5 +1,0 @@
-Resprite:
-    Soul crystal 2 & 3
-    Bottom of Soul Geode
-Ideas:
-    Add processing for opal & other gems (diamond, gold, emerald, etc)

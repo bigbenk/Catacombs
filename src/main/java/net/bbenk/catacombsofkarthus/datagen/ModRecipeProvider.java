@@ -44,35 +44,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_lapislazui", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(Items.LAPIS_LAZULI).build())).save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.GEM_AXE.get())
-                .pattern("AA ")
-                .pattern("AB ")
-                .pattern(" C ")
-                .define('A', Items.GOLD_INGOT)
-                .define('B', Items.LAPIS_LAZULI)
-                .define('C', Items.STICK)
-                .unlockedBy("has_lapislazui", inventoryTrigger(ItemPredicate.Builder.item()
-                        .of(Items.LAPIS_LAZULI).build())).save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.GEM_HOE.get())
-                .pattern("AA ")
-                .pattern(" B ")
-                .pattern(" C ")
-                .define('A', Items.GOLD_INGOT)
-                .define('B', Items.LAPIS_LAZULI)
-                .define('C', Items.STICK)
-                .unlockedBy("has_lapislazui", inventoryTrigger(ItemPredicate.Builder.item()
-                        .of(Items.LAPIS_LAZULI).build())).save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.GEM_SHOVEL.get())
-                .pattern(" A ")
-                .pattern(" B ")
-                .pattern(" C ")
-                .define('A', Items.GOLD_INGOT)
-                .define('B', Items.LAPIS_LAZULI)
-                .define('C', Items.STICK)
-                .unlockedBy("has_lapislazui", inventoryTrigger(ItemPredicate.Builder.item()
-                        .of(Items.LAPIS_LAZULI).build())).save(pWriter);
 
         //nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.ITEMCRAFTSINTO.get(), RecipeCategory.MISC, ModBlocks.THEBLOCKCRAFTED.get(),
         // "Catacombsofkarthus:rawgroup, null, RAWBLOCK, rawgroup);

@@ -1,4 +1,4 @@
-package net.bbenk.catacombsofkarthus.entity;
+package net.bbenk.catacombsofkarthus.entity.custom;
 
 import net.bbenk.catacombsofkarthus.entity.variant.ModEntities;
 import net.minecraft.core.BlockPos;

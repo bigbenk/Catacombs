@@ -28,10 +28,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
 
         handheldItem(ModItems.MALLET);
-        handheldItem(ModItems.GEM_AXE);
-        handheldItem(ModItems.GEM_HOE);
         handheldItem(ModItems.GEM_PICK);
-        handheldItem(ModItems.GEM_SHOVEL);
         //1 layer item generators
     }
 

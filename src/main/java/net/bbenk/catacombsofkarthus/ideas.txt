@@ -1,0 +1,75 @@
+INGREDIENT       || TIER | LOOT TABLES | ADDITIONAL NOTES
+----------------------------------------------------------------------------------------------------------------------------------
+Witherspec       ||  5   | Bejeweled         |
+
+ORES             || TIER | TOOL TAG REQUIRED | ADDITIONAL NOTES
+----------------------------------------------------------------------------------------------------------------------------------
+Jade             || Gem  | Iron              | 2-4 veins, 1.4x diamond rarity
+Sapphire         || Gem  | Iron              | 2-4 veins, 1.2x diamond rarity
+Opal             || Gem  | Iron              | 2-4 veins, 1.3x diamond rarity
+Painite          || Gem  | Iron              | 1-2 veins, 1.5x diamond rarity
+Netherspec       ||  5   | Mineable from Netherspec Deposit with Delving tier | Drops as chunks
+
+TOOL TAG         ||TIER | LOOT TABLES                | STATS       | ADDITIONAL NOTES (Sword=0;Axe=2,-3e;Shovel=-5,-2.4;Pick=-3,-2.8e)
+----------------------------------------------------------------------------------------------------------------------------------
+Bejeweled        ||  6  | Nthrte Pick + Gem Smithing | 7ATK/8.2SPD | Pick
+WitherspecAlloy  ||  5  | Netherspec Alloy           | 12ATK/9SPD  | Pick, Mallet, Shovel, Axe, Weapons, Armor, Arrowhead
+
+
+MISC ITEMS       ||TIER | LOOT TABLES                   | STATS       | ADDITIONAL NOTES
+----------------------------------------------------------------------------------------------------------------------------------
+Mallet           ||MISC | 3 Iron + 2 Sticks             | 3ATK/1.2SPD | 10 Durability & used to dust tier 3 gems and below
+Withered Hand    ||5    | 2 WthSkl + Nthrstr + 2 Wthspc | 15ATK/0.8SPD| 150 Durability & used to dust tier 2 gems and below
+
+WEAPONS          || TIER | TYPE | LOOT TABLES | STATS | ADDITIONAL NOTES
+----------------------------------------------------------------------------------------------------------------------------------
+
+CURIOS           || TYPE | LOOT TABLES           | STATS                                      | ADDITIONAL NOTES
+----------------------------------------------------------------------------------------------------------------------------------
+Lover's Carapace || Amlt | STRY LNE              | LVRSWMTH E, 5ARMR, 8HP, BTSRN40%         | RQ: KndrdQst **
+Wrath's Memory   || Amlt | STRY LNE              | RGEAGDTH E, RTSRN40%                     | RQ: KndrdQst **
+Wngs of Fallen   || Back | TBD                   |                                          | Morgana Reference **
+Wngs of Rgtheous ||                              |                                          | Kayle Reference **
+
+EFFECTS          || TYPE | SOURCES     | STATS
+----------------------------------------------------------------------------------------------------------------------------------
+Lvs Wmth         ||UnqBuf| Lvrs Carpce | 20% less damage taken from death type mobs    | **
+Rge Agn Dth      ||UnqBuf| Wrths Mmry  | 20% more damage dealt to undead mobs          | **
+
+
+ARMOR            || TIER | TYPE | LOOT TABLE      | STATS             | ADDITIONAL NOTES
+----------------------------------------------------------------------------------------------------------------------------------
+Aviator's Cap    || MISC | Helm | 4 Lthr 1 IrnIngt| 4 Def, 1.5 Tg     | Grants wearer slowfall effect
+
+
+MULTIBLOCK       || TYPE  | TIER | BLOCKS                              | USE FOR                     | ADDITIONAL NOTES
+----------------------------------------------------------------------------------------------------------------------------------
+Smelting Forge   || Forge |   3  | Blackstone/Magma/Netherspec Furnace | Creating Netherspec alloy
+Forge Anvil      || Anvil | MISC | Blackstone/Netherspec Plate         | Breaking gems into dust     | RClick with Mallet
+Creator's Pincle || MISC  |   0  | TBD                                 | Endgame manipulation        | Meant to be overpowered and exceedingly difficult to obtain
+
+BOSSES           || TIER  | DIFF | PHS# |              1               |             2               |          3
+----------------------------------------------------------------------------------------------------------------------------------
+Seraph           ||  1DN  | YES  | TBD
+Aatrox           ||  2Q   | QST  | TBD
+Lamb & Wolf      ||  3Q   | QST  | TBD
+Azir             ||  5DH  | NO   |
+Karthus          ||  5DN  | YES  |  2
+
+DUNGEONS         || TIER  | DIFF | RMN# | THEME                                                       |
+----------------------------------------------------------------------------------------------------------------------------------
+Sand Swallowed C ||  5H   | NO   |
+Howling Crypts   ||  5N   | YES^ | 10   | Gloomy dungeon, secretive, magic, undead
+
+KEY:
+----------------------------------------------------------------------------------------------------------------------------------
+Hard Difficulty Dungeons: Very difficult increase to Normal "N" difficulty dungeons, same rooms but different blocks and
+theme while also including a different variation of a boss. These can generally be considered as 2 tier difficulties
+above their respective dungeon tier level. Some of these variations have exclusive room spawns.
+
+Abbreviations: In general a lot is abbreviated to make things fit in their columns. RMN# = Amount of rooms before
+reaching the boss room (exclusive). PHS# = Number of phases.
+
+UPDATES & CHANGES:
+----------------------------------------------------------------------------------------------------------------------------------
+Remove GemTool class & make gems mineable with vanilla iron tier
